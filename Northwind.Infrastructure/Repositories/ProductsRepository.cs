@@ -21,6 +21,14 @@ namespace Northwind.Infrastructure.Repositories
 			this.mapper = mapper;
 		}
 
+		public Product Add(Product product)
+		{
+			this.dbContext.Set<Products>().Add(this.mapper.Map<Products>(product));
+			this.dbContext.SaveChanges();
+
+			return product;
+		}
+
 		public Product Get(int id)
 		{
 			Products product = this.dbContext.Set<Products>().Find(id);
@@ -33,11 +41,11 @@ namespace Northwind.Infrastructure.Repositories
 			IEnumerable<Products> products;
 			if (count <= 0)
 			{
-				products = this.dbContext.Set<Products>().AsEnumerable();
+				products = this.dbContext.Set<Products>().Include(p => p.Category).AsEnumerable();
 			}
 			else
 			{
-				products = this.dbContext.Set<Products>().Take(count).AsEnumerable();
+				products = this.dbContext.Set<Products>().Take(count).Include(p => p.Category).AsEnumerable();
 			}
 
 			return products.Select(p => this.mapper.Map<Product>(p));

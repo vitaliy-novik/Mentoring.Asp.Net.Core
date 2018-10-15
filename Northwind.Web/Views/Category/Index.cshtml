@@ -1,0 +1,25 @@
+﻿@model CategoriesListViewModel
+
+@{
+	ViewBag.Title = "Categories";
+}
+
+<h2>Categories</h2>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Category</th>
+			<th scope="col">Description</th>
+		</tr>
+	</thead>
+	@foreach (var product in this.Model.Categories)
+	{
+		<tr>
+			<td>@product.CategoryId</td>
+			<td>@product.CategoryName</td>
+			<td>@product.Description</td>
+		</tr>
+	}
+</table>

@@ -8,5 +8,7 @@ namespace Northwind.Core.Interfaces
 		Product Get(int id);
 
 		IEnumerable<Product> List(int count = 0);
+
+		Product Add(Product product);
 	}
 }

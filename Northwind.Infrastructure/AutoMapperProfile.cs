@@ -10,6 +10,9 @@ namespace Northwind.Infrastructure
 		{
 			CreateMap<Products, Product>();
 			CreateMap<Product, Products>();
+
+			CreateMap<Categories, Category>();
+			CreateMap<Category, Categories>();
 		}
 	}
 }

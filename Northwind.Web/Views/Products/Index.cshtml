@@ -6,15 +6,30 @@
 
 <h2>Products</h2>
 
-<table>
-    @foreach (var product in this.Model.Products)
-    {
-        <tr>
-            <td>@product.ProductId</td>
-            <td>@product.ProductName</td>
-            <td>@product.UnitPrice</td>
-            <td>@product.UnitsInStock</td>
-        </tr>
-    }
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Product</th>
+			<th scope="col">Price</th>
+			<th scope="col">Count</th>
+			<th scope="col">Category</th>
+			<th scope="col">Action</th>
+		</tr>
+	</thead>
+	@foreach (var product in this.Model.Products)
+	{
+	<tr>
+		<td>@product.ProductId</td>
+		<td>@product.ProductName</td>
+		<td>@product.UnitPrice</td>
+		<td>@product.UnitsInStock</td>
+		<td>@product.Category.CategoryName</td>
+		<td>
+			<a asp-action="Edit" asp-route-id="@product.ProductId">Edit</a>
+		</td>
+	</tr>
+	}
 </table>
+<a asp-action="Create" class="btn btn-primary">Create</a>
 

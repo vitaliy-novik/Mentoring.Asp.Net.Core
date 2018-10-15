@@ -30,6 +30,7 @@ namespace Northwind.Web
 			services.AddDbContext<NorthwindContext>(options => 
 				options.UseSqlServer(this.configuration.GetConnectionString("Northwind")));
 			services.AddScoped<IProductsRepository, ProductsRepository>();
+			services.AddScoped<ICategoriesRepository, CategoriesRepository>();
 
 			MapperConfiguration mappingConfig = new MapperConfiguration(mc =>
 			{
@@ -51,18 +52,14 @@ namespace Northwind.Web
 
 			app.UseStaticFiles();
 
-			app.UseMvc(this.ConfigureRoutes);
+			app.UseNodeModules(env.ContentRootPath);
 
-			app.Run(async (context) =>
-			{
-				context.Response.ContentType = "text/plain";
-				await context.Response.WriteAsync("Page Not Found");
-			});
+			app.UseMvc(this.ConfigureRoutes);
 		}
 
 		private void ConfigureRoutes(IRouteBuilder routeBuilder)
 		{
-			routeBuilder.MapRoute("Default", "{controller=Home}/{action=Indes}/{id?}");
+			routeBuilder.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
 		}
 	}
 }
