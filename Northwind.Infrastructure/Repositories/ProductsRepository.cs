@@ -21,12 +21,10 @@ namespace Northwind.Infrastructure.Repositories
 			this.mapper = mapper;
 		}
 
-		public Product Add(Product product)
+		public void Add(Product product)
 		{
 			this.dbContext.Set<Products>().Add(this.mapper.Map<Products>(product));
 			this.dbContext.SaveChanges();
-
-			return product;
 		}
 
 		public Product Get(int id)

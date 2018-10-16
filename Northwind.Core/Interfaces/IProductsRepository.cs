@@ -9,6 +9,6 @@ namespace Northwind.Core.Interfaces
 
 		IEnumerable<Product> List(int count = 0);
 
-		Product Add(Product product);
+		void Add(Product product);
 	}
 }

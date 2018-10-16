@@ -55,8 +55,14 @@ namespace Northwind.Web.Controllers
 		}
 
 		[HttpPost]
+		[ValidateAntiForgeryToken]
 		public IActionResult Create(ProductViewModel product)
 		{
+			if (!ModelState.IsValid)
+			{
+				return View();
+			}
+
 			var newProduct = new Product
 			{
 				ProductName = product.ProductName,
@@ -65,7 +71,9 @@ namespace Northwind.Web.Controllers
 				CategoryId = product.CategoryId
 			};
 
-			return View();
+			this.productsRepository.Add(newProduct);
+
+			return RedirectToAction(nameof(Index));
 		}
 	}
 }
