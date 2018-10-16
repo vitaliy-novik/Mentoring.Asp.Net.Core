@@ -1,0 +1,206 @@
+Request starting HTTP/1.1 GET http://localhost:44361/  
+Request starting HTTP/1.1 DEBUG http://localhost:63287/  0
+Request finished in 115.1792ms 200 
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 15.4217ms
+An unhandled exception has occurred while executing the request.
+Request finished in 817.3107ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44361/favicon.ico  
+Request finished in 5.3453ms 404 
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 4.072ms
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 0.5454ms
+An exception was thrown attempting to execute the error handler.
+Connection id "0HLHJLDP1H14V", Request id "0HLHJLDP1H14V:00000001": An unhandled exception was thrown by the application.
+Request finished in 276.3673ms 500 
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 3.8639ms
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 1.0416ms
+An exception was thrown attempting to execute the error handler.
+Connection id "0HLHJLEMFRJOM", Request id "0HLHJLEMFRJOM:00000001": An unhandled exception was thrown by the application.
+Request finished in 238.3142ms 500 
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 6.3784ms
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 0.6576ms
+An exception was thrown attempting to execute the error handler.
+Connection id "0HLHJLESC4NSH", Request id "0HLHJLESC4NSH:00000001": An unhandled exception was thrown by the application.
+Request finished in 269.451ms 500 
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 7.1736ms
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 0.982ms
+An exception was thrown attempting to execute the error handler.
+Connection id "0HLHJLFD6CO2E", Request id "0HLHJLFD6CO2E:00000001": An unhandled exception was thrown by the application.
+Request finished in 293.3877ms 500 
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 10049.147ms
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at Northwind.Web.Controllers.HomeController.Index() in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Controllers\HomeController.cs:line 18
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10960.3058ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 262.7633ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 11267.1879ms
+Request starting HTTP/1.1 GET https://localhost:5001/node_modules/jquery-validation/dist/jquery.validate.js  
+Request starting HTTP/1.1 GET https://localhost:5001/node_modules/jquery/dist/jquery.js  
+Request starting HTTP/1.1 GET https://localhost:5001/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js  
+Request finished in 28578.0969ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/node_modules/bootstrap/dist/css/bootstrap.css  
+Request starting HTTP/1.1 GET https://localhost:5001/node_modules/bootstrap/dist/js/bootstrap.bundle.js  
+Sending file. Request path: '/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\node_modules\jquery-validation\dist\jquery.validate.js'
+Request finished in 54669.166ms 200 application/javascript
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLHJLQA7MOUQ", Request id "0HLHJLQA7MOUQ:00000001": An unhandled exception was thrown by the application.
+Request finished in 54695.9458ms 200 application/javascript
+Sending file. Request path: '/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\node_modules\bootstrap\dist\css\bootstrap.css'
+Request finished in 54656.2055ms 200 text/css
+Sending file. Request path: '/bootstrap/dist/js/bootstrap.bundle.js'. Physical path: 'C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\node_modules\bootstrap\dist\js\bootstrap.bundle.js'
+Request finished in 54666.8729ms 200 application/javascript
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLHJLQA7MOUS", Request id "0HLHJLQA7MOUS:00000001": An unhandled exception was thrown by the application.
+Request finished in 66821.3052ms 200 application/javascript
+Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+Request finished in 7.151ms 404 
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 4135.7989ms
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at Northwind.Web.Controllers.HomeController.Index() in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Controllers\HomeController.cs:line 18
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4808.1977ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 177.9017ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 5004.3241ms
+Request finished in 9410.5018ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 992.5908ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (65ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 2155.3532ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 3552.1288ms
+Request finished in 3576.8074ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Products  
+Route matched with {action = "Index", controller = "Products"}. Executing action Northwind.Web.Controllers.ProductsController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.ProductsController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.ProductsController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 30.2267ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[Discontinued], [p].[ProductName], [p].[QuantityPerUnit], [p].[ReorderLevel], [p].[SupplierID], [p].[UnitPrice], [p].[UnitsInStock], [p].[UnitsOnOrder], [p.Category].[CategoryID], [p.Category].[CategoryName], [p.Category].[Description], [p.Category].[Picture]
+FROM [Products] AS [p]
+LEFT JOIN [Categories] AS [p.Category] ON [p].[CategoryID] = [p.Category].[CategoryID]
+Executed ViewResult - view Index executed in 455.3307ms.
+Executed action Northwind.Web.Controllers.ProductsController.Index (Northwind.Web) in 503.505ms
+Request finished in 521.913ms 200 text/html; charset=utf-8
+Application STARTED
+Maximum products per page: 0 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6311ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 189.8022ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 239.2448ms
+Request finished in 447.0256ms 200 text/html; charset=utf-8
+Application STARTED at 10/17/2018 02:47:26
+Maximum products per page: 0 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 9947.5467ms
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Application STARTED at 10/17/2018 02:48:02
+Maximum products per page: 0 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 5204.8392ms
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at Northwind.Web.Controllers.HomeController.Index() in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Controllers\HomeController.cs:line 19
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 11.1553ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 288.8467ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 333.8044ms
+Request finished in 5806.0294ms 500 text/html; charset=utf-8

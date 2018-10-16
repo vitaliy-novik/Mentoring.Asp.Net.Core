@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Northwind.Web.ViewModels;
 
 namespace Northwind.Web.Controllers
 {
@@ -8,13 +9,15 @@ namespace Northwind.Web.Controllers
 	{
 		private ILogger logger;
 
-		public HomeController(ILogger logger)
+		public HomeController(ILogger<HomeController> logger)
 		{
 			this.logger = logger;
 		}
 
 		public IActionResult Index()
 		{
+			throw new System.Exception();
+
 			return View();
 		}
 
@@ -22,7 +25,14 @@ namespace Northwind.Web.Controllers
 		{
 			var error = this.HttpContext.Features.Get<IExceptionHandlerFeature>().Error;
 
-			return View();
+			this.logger.LogError(error.ToString());
+
+			ErrorViewModel viewModel = new ErrorViewModel
+			{
+				RequestId = this.HttpContext.TraceIdentifier
+			};
+
+			return View(viewModel);
 		}
 	}
 }

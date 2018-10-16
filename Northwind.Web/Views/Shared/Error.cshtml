@@ -1,5 +1,7 @@
-﻿@{
+﻿@model ErrorViewModel
+@{
 	ViewBag.Title = "Error";
 }
 
-<h2>An error occured</h2>
+<h2>An error occured!</h2>
+<h3>See request:@Model.RequestId in log file.</h3>

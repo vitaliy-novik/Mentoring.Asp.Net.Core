@@ -11,12 +11,14 @@ using Northwind.Infrastructure;
 using Northwind.Infrastructure.Repositories;
 using Northwind.Web.Configuration;
 using Northwind.Web.Logging;
+using System;
 using System.IO;
 
 namespace Northwind.Web
 {
 	public class Startup
 	{
+		private const string NorthwindConnectionStringName = "Northwind";
 		private IConfiguration configuration;
 
 		public Startup(IConfiguration configuration)
@@ -30,7 +32,7 @@ namespace Northwind.Web
 		{
 			services.AddSingleton<IApplicationConfiguration, ApplicationConfiguration>();
 			services.AddDbContext<NorthwindContext>(options => 
-				options.UseSqlServer(this.configuration.GetConnectionString("Northwind")));
+				options.UseSqlServer(this.configuration.GetConnectionString(NorthwindConnectionStringName)));
 			services.AddScoped<IProductsRepository, ProductsRepository>();
 			services.AddScoped<ICategoriesRepository, CategoriesRepository>();
 
@@ -46,9 +48,18 @@ namespace Northwind.Web
 			services.AddMvc();
 		}
 
-		public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+		public void Configure(
+			IApplicationBuilder app, 
+			IHostingEnvironment env, 
+			ILoggerFactory loggerFactory,
+			IConfiguration configuration)
 		{
 			loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "log.txt"));
+			var logger = loggerFactory.CreateLogger("FileLogger");
+			logger.LogInformation("Application STARTED at {0}", DateTime.Now);
+			logger.LogInformation("Maximum products per page: {0} \n ConnectionString: {1}",
+				configuration["MaxProductsOnPage"],
+				configuration.GetConnectionString(NorthwindConnectionStringName));
 
 			if (env.IsDevelopment())
 			{

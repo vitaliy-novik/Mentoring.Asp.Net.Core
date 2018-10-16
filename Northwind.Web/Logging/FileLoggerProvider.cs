@@ -19,7 +19,7 @@ namespace Northwind.Web.Logging
 
 		public void Dispose()
 		{
-			throw new NotImplementedException();
+			
 		}
 	}
 }
