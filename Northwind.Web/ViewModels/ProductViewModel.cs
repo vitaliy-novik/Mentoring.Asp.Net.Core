@@ -4,6 +4,8 @@ namespace Northwind.Web.ViewModels
 {
 	public class ProductViewModel
 	{
+		public int ProductId { get; set; }
+
 		[Display(Name = "Name")]
 		[Required, MaxLength(30)]
 		public string ProductName { get; set; }

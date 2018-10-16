@@ -10,5 +10,7 @@ namespace Northwind.Core.Interfaces
 		IEnumerable<Product> List(int count = 0);
 
 		void Add(Product product);
+
+		void Update(Product product);
 	}
 }

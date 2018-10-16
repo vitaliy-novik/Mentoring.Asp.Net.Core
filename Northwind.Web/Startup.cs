@@ -1,15 +1,17 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Northwind.Core.Interfaces;
 using Northwind.Infrastructure;
 using Northwind.Infrastructure.Repositories;
 using Northwind.Web.Configuration;
+using Northwind.Web.Logging;
+using System.IO;
 
 namespace Northwind.Web
 {
@@ -35,6 +37,7 @@ namespace Northwind.Web
 			MapperConfiguration mappingConfig = new MapperConfiguration(mc =>
 			{
 				mc.AddProfile(new AutoMapperProfile());
+				mc.AddProfile(new WebMapperProfile());
 			});
 
 			IMapper mapper = mappingConfig.CreateMapper();
@@ -43,11 +46,17 @@ namespace Northwind.Web
 			services.AddMvc();
 		}
 
-		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+		public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
 		{
+			loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "log.txt"));
+
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
+			}
+			else
+			{
+				app.UseExceptionHandler("/home/error");
 			}
 
 			app.UseStaticFiles();

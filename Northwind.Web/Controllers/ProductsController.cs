@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Northwind.Core.Entities;
 using Northwind.Core.Interfaces;
@@ -14,15 +15,18 @@ namespace Northwind.Web.Controllers
 		private IProductsRepository productsRepository;
 		private ICategoriesRepository categoriesRepository;
 		private IApplicationConfiguration appConfiguration;
+		private IMapper mapper;
 
 		public ProductsController(
 			IProductsRepository productsRepository,
 			ICategoriesRepository categoriesRepository,
-			IApplicationConfiguration applicationConfiguration)
+			IApplicationConfiguration applicationConfiguration,
+			IMapper mapper)
 		{
 			this.productsRepository = productsRepository;
 			this.categoriesRepository = categoriesRepository;
 			this.appConfiguration = applicationConfiguration;
+			this.mapper = mapper;
 		}
 
 		public IActionResult Index()
@@ -42,16 +46,10 @@ namespace Northwind.Web.Controllers
 		public IActionResult Create()
 		{
 			IEnumerable<Category> categories = this.categoriesRepository.List();
-			var viewModel = new CreateProductViewModel
-			{
-				Categories = categories.Select(c => new SelectListItem
-				{
-					Value = c.CategoryId.ToString(),
-					Text = c.CategoryName
-				})
-			};
 
-			return View(viewModel);
+			ViewBag.CategoriesSelector = this.CreateCategoriesSelector();
+
+			return View();
 		}
 
 		[HttpPost]
@@ -63,17 +61,47 @@ namespace Northwind.Web.Controllers
 				return View();
 			}
 
-			var newProduct = new Product
-			{
-				ProductName = product.ProductName,
-				UnitPrice = product.UnitPrice,
-				UnitsInStock = product.UnitsInStock,
-				CategoryId = product.CategoryId
-			};
+			Product newProduct = this.mapper.Map<Product>(product);
 
 			this.productsRepository.Add(newProduct);
 
 			return RedirectToAction(nameof(Index));
+		}
+
+		[HttpGet]
+		public IActionResult Edit(int id)
+		{
+			Product product = this.productsRepository.Get(id);
+			ProductViewModel viewModel = this.mapper.Map<ProductViewModel>(product);
+			ViewBag.CategoriesSelector = this.CreateCategoriesSelector();
+
+			return View(viewModel);
+		}
+
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public IActionResult Edit(ProductViewModel product)
+		{
+			if (!ModelState.IsValid)
+			{
+				return View();
+			}
+
+			Product newProduct = this.mapper.Map<Product>(product);
+
+			this.productsRepository.Update(newProduct);
+
+			return RedirectToAction(nameof(Index));
+		}
+
+		private IEnumerable<SelectListItem> CreateCategoriesSelector()
+		{
+			IEnumerable<Category> categories = this.categoriesRepository.List();
+			return categories.Select(c => new SelectListItem
+			{
+				Value = c.CategoryId.ToString(),
+				Text = c.CategoryName
+			});
 		}
 	}
 }

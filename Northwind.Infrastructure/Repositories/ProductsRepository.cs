@@ -48,5 +48,11 @@ namespace Northwind.Infrastructure.Repositories
 
 			return products.Select(p => this.mapper.Map<Product>(p));
 		}
+
+		public void Update(Product product)
+		{
+			this.dbContext.Entry(this.mapper.Map<Products>(product)).State = EntityState.Modified;
+			this.dbContext.SaveChanges();
+		}
 	}
 }
