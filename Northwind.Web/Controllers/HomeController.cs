@@ -16,8 +16,6 @@ namespace Northwind.Web.Controllers
 
 		public IActionResult Index()
 		{
-			throw new System.Exception();
-
 			return View();
 		}
 

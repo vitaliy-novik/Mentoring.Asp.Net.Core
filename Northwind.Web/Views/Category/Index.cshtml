@@ -14,12 +14,12 @@
 			<th scope="col">Description</th>
 		</tr>
 	</thead>
-	@foreach (var product in this.Model.Categories)
+	@foreach (var category in this.Model.Categories)
 	{
 		<tr>
-			<td>@product.CategoryId</td>
-			<td>@product.CategoryName</td>
-			<td>@product.Description</td>
+			<td>@category.CategoryId</td>
+			<td><a asp-action="Details" asp-route-id="@category.CategoryId">@category.CategoryName</a></td>
+			<td>@category.Description</td>
 		</tr>
 	}
 </table>

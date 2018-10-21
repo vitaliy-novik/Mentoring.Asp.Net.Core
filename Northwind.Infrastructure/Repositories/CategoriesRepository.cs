@@ -4,6 +4,7 @@ using Northwind.Core.Entities;
 using Northwind.Core.Interfaces;
 using Northwind.Infrastructure.Models;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace Northwind.Infrastructure.Repositories
@@ -33,6 +34,18 @@ namespace Northwind.Infrastructure.Repositories
 			var categories = this.dbContext.Set<Categories>().AsEnumerable();
 
 			return categories.Select(c => this.mapper.Map<Category>(c));
+		}
+
+		public MemoryStream GetImage(int id)
+		{
+			byte[] picture = this.dbContext.Set<Categories>().Find(id).Picture;
+
+			MemoryStream ms = new MemoryStream();
+			ms.Write(picture, 78, picture.Length - 78);
+			ms.Position = 0;
+
+			return ms;
+
 		}
 	}
 }

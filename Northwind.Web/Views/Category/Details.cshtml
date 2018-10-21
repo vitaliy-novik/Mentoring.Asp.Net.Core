@@ -1,0 +1,18 @@
+﻿@model Northwind.Core.Entities.Category
+
+@{
+    ViewBag.Title = "Category details";
+}
+
+<h2>@Model.CategoryName</h2>
+<div class="row">
+    <div class="col-sm-4">
+        <span>@Model.Description</span>
+    </div>
+    <div class="col-sm-4">
+        <img src="/images/@Model.CategoryId" class="img-fluid" alt="image">
+    </div>
+    <div class="col-sm-4">
+        <a asp-action="Edit" asp-route-id="@Model.CategoryId">Edit</a>
+    </div>
+</div>
