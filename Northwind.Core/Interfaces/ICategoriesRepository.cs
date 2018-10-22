@@ -11,5 +11,6 @@ namespace Northwind.Core.Interfaces
 		IEnumerable<Category> List();
 
 		MemoryStream GetImage(int id);
+		void Update(Category category);
 	}
 }

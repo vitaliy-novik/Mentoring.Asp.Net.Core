@@ -36,12 +36,19 @@ namespace Northwind.Infrastructure.Repositories
 			return categories.Select(c => this.mapper.Map<Category>(c));
 		}
 
+		public void Update(Category category)
+		{
+			this.dbContext.Entry(this.mapper.Map<Categories>(category)).State = EntityState.Modified;
+			this.dbContext.SaveChanges();
+		}
+
 		public MemoryStream GetImage(int id)
 		{
 			byte[] picture = this.dbContext.Set<Categories>().Find(id).Picture;
 
 			MemoryStream ms = new MemoryStream();
-			ms.Write(picture, 78, picture.Length - 78);
+			//ms.Write(picture, 78, picture.Length - 78);
+			ms.Write(picture, 0, picture.Length);
 			ms.Position = 0;
 
 			return ms;

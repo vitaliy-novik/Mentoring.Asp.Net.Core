@@ -43,17 +43,32 @@ namespace Northwind.Web.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult Edit(CategoryViewModel viewModel)
+		public IActionResult Edit(EditCategoryViewModel editModel)
 		{
-			if (!ModelState.IsValid)
+			if (ModelState.IsValid)
 			{
-				return View();
+				Category category = new Category
+				{
+					CategoryId = editModel.CategoryId,
+					CategoryName = editModel.CategoryName,
+					Description = editModel.Description
+				};
+
+				using (var memoryStream = new MemoryStream())
+				{
+					editModel.Picture.CopyTo(memoryStream);
+					category.Picture = memoryStream.ToArray();
+				}
+
+				this.categoriesRepository.Update(category);
+
+				return RedirectToAction(nameof(Index));
 			}
 
-			RedirectToAction(nameof(Index));
+			return View();
 		}
 
-		[Route("images/{id}")]
+		//[Route("images/{id}")]
 		public IActionResult Image(int id)
 		{
 			MemoryStream image = this.categoriesRepository.GetImage(id);

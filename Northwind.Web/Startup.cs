@@ -30,7 +30,7 @@ namespace Northwind.Web
 		// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddSingleton<IApplicationConfiguration, ApplicationConfiguration>();
+			services.AddScoped<IApplicationConfiguration, ApplicationConfiguration>();
 			services.AddDbContext<NorthwindContext>(options => 
 				options.UseSqlServer(this.configuration.GetConnectionString(NorthwindConnectionStringName)));
 			services.AddScoped<IProductsRepository, ProductsRepository>();
@@ -79,6 +79,7 @@ namespace Northwind.Web
 
 		private void ConfigureRoutes(IRouteBuilder routeBuilder)
 		{
+			routeBuilder.MapRoute("Images", "images/{id}", defaults: new { controller = "Category", action = "Image" });
 			routeBuilder.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
 		}
 	}
