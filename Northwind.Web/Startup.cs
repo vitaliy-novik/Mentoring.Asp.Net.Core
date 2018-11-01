@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Northwind.Core.Interfaces;
 using Northwind.Infrastructure;
 using Northwind.Infrastructure.Repositories;
+using Northwind.Web.ActionFilters;
 using Northwind.Web.Configuration;
 using Northwind.Web.Logging;
 using System;
@@ -45,7 +46,7 @@ namespace Northwind.Web
 			IMapper mapper = mappingConfig.CreateMapper();
 			services.AddSingleton(mapper);
 
-			services.AddMvc();
+			services.AddMvc(opt => opt.Filters.Add(new LoggingActionFilter()));
 		}
 
 		public void Configure(
@@ -54,6 +55,7 @@ namespace Northwind.Web
 			ILoggerFactory loggerFactory,
 			IConfiguration configuration)
 		{
+            loggerFactory.AddConsole();
 			loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "log.txt"));
 			var logger = loggerFactory.CreateLogger("FileLogger");
 			logger.LogInformation("Application STARTED at {0}", DateTime.Now);
