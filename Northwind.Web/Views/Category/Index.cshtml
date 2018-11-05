@@ -8,18 +8,24 @@
 
 <table class="table">
 	<thead>
-		<tr>
-			<th scope="col">#</th>
-			<th scope="col">Category</th>
-			<th scope="col">Description</th>
-		</tr>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Category</th>
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+        </tr>
 	</thead>
 	@foreach (var category in this.Model.Categories)
 	{
-		<tr>
-			<td>@category.CategoryId</td>
-			<td><a asp-action="Details" asp-route-id="@category.CategoryId">@category.CategoryName</a></td>
-			<td>@category.Description</td>
-		</tr>
+    <tr>
+        <td>@category.CategoryId</td>
+        <td><a asp-action="Details" asp-route-id="@category.CategoryId">@category.CategoryName</a></td>
+        <td>@category.Description</td>
+        <td><a image-id="@category.CategoryId">Link</a></td>
+    </tr>
 	}
 </table>
+
+@section Footer {
+    <h4>Users can’t edit categories.</h4>
+}

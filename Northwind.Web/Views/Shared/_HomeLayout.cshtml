@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <partial name="Navbar" />
+    <div class="container">
+        @RenderBody()
+    </div>
+    <div class="container">
+        <img src="~/home.svg" class="img-fluid" alt="Responsive image" />
+    </div>
+    <footer class="fixed-bottom bg-light">
+        <div class="container">
+            <h4>Default footer.</h4>
+        </div>
+    </footer>
+    <script src="~/node_modules/jquery/dist/jquery.js"></script>
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
