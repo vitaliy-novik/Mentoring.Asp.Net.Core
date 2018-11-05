@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.AspNetCore.Razor.TagHelpers;
+﻿using Microsoft.AspNetCore.Razor.TagHelpers;
 
 namespace Northwind.Web.Helpers
 {
@@ -9,14 +7,9 @@ namespace Northwind.Web.Helpers
     {
         public string ImageId { get; set; }
 
-        [ActionContext]
-        public ActionContext ActionContext { get; set; }
-
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            UrlHelper urlHelper = new UrlHelper(ActionContext);
-            output.Attributes.SetAttribute("href", urlHelper.RouteUrl("images", new { id = ImageId }));
-
+            output.Attributes.SetAttribute("href", $"images/{ImageId}");
         }
     }
 }

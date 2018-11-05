@@ -3036,3 +3036,1374 @@ Executing ViewResult, running view Index.
 Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
 FROM [Categories] AS [c]
+Application STARTED at 11/05/2018 20:04:43
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Application startup exception
+Application STARTED at 11/05/2018 20:08:24
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+An unhandled exception has occurred while executing the request.
+An exception was thrown attempting to execute the error handler.
+Connection id "0HLI38569IUDB", Request id "0HLI38569IUDB:00000001": An unhandled exception was thrown by the application.
+Request finished in 16114.628ms 500 
+Request starting HTTP/1.1 GET https://localhost:5001/  
+An unhandled exception has occurred while executing the request.
+An exception was thrown attempting to execute the error handler.
+Connection id "0HLI38569IUDE", Request id "0HLI38569IUDE:00000001": An unhandled exception was thrown by the application.
+Request finished in 3186.0989ms 500 
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Application STARTED at 11/05/2018 20:57:38
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Application STARTED at 11/05/2018 21:00:16
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2151ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 261.4289ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 347.6903ms
+Request starting HTTP/1.1 GET https://localhost:5001/home.svg  
+Request finished in 29684.0201ms 200 text/html; charset=utf-8
+The file /home.svg was not modified
+Application STARTED at 11/05/2018 21:02:01
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.2281ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 188.7175ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 248.138ms
+Request starting HTTP/1.1 GET https://localhost:5001/home.svg  
+Request finished in 72220.1152ms 200 text/html; charset=utf-8
+Sending file. Request path: '/home.svg'. Physical path: 'C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\wwwroot\home.svg'
+Request finished in 13238.9993ms 200 image/svg+xml
+Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+Request finished in 2288.6312ms 404 
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 938.6738ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (103ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 16469.9219ms
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.ArgumentNullException: Value cannot be null.
+Parameter name: actionContext
+   at Microsoft.AspNetCore.Mvc.Routing.UrlHelper..ctor(ActionContext actionContext)
+   at Northwind.Web.Helpers.ImageLinkTagHelper.Process(TagHelperContext context, TagHelperOutput output) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Helpers\ImageLinkTagHelper.cs:line 17
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Category_Index.ExecuteAsync() in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Views\Category\Index.cshtml:line 24
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Northwind.Web.Middleware.ImageCachingMiddleware.Invoke(HttpContext context) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Middleware\ImageCachingMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.1916ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 70.645ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 94.0951ms
+Request finished in 50176.3166ms 500 text/html; charset=utf-8
+Application STARTED at 11/05/2018 21:05:29
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9379ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 247.0901ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 306.9119ms
+Request finished in 599.8289ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1068.0357ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Application STARTED at 11/05/2018 21:46:20
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0596ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 313.7076ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 384.8809ms
+Request finished in 757.3207ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 959.9028ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 1534.7467ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 2797.5543ms
+Request finished in 2908.4782ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (57ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 300.013ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 359.3461ms
+Request finished in 430.4305ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/Category/Details/1  
+Route matched with {action = "Details", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Details (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Details (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Details (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 33.9319ms.
+Executing ViewResult, running view Details.
+Executed ViewResult - view Details executed in 41.9787ms.
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Executed action Northwind.Web.Controllers.CategoryController.Details (Northwind.Web) in 215.5061ms
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Request finished in 278.0432ms 200 text/html; charset=utf-8
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 35.2938ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 123.32ms
+Request finished in 292.0336ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/Category/Edit/1  
+Route matched with {action = "Edit", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 18.8195ms.
+Executing ViewResult, running view Edit.
+Executed ViewResult - view Edit executed in 143.4333ms.
+Executed action Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web) in 214.9272ms
+Request finished in 309.9405ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 119.8806ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 164.8689ms
+Request finished in 275.6714ms 200 image/jpeg
+Request starting HTTP/1.1 POST https://localhost:5001/Category/Edit/1 multipart/form-data; boundary=----WebKitFormBoundary57TPiHYzgXDDIjeN 56937
+Route matched with {action = "Edit", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web) with arguments (Northwind.Web.ViewModels.EditCategoryViewModel) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (10ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 15), @p1='?' (Size = 4000), @p2='?' (Size = -1) (DbType = Binary)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Categories] SET [CategoryName] = @p0, [Description] = @p1, [Picture] = @p2
+WHERE [CategoryID] = @p3;
+SELECT @@ROWCOUNT;
+Executed action method Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 194.4902ms.
+Executing RedirectResult, redirecting to /Category.
+Executed action Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web) in 299.5031ms
+Request finished in 344.2121ms 302 
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.4226ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 19.4789ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 41.7879ms
+Request finished in 58.6596ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category/Details/1  
+Route matched with {action = "Details", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Details (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Details (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Details (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.3991ms.
+Executing ViewResult, running view Details.
+Executed ViewResult - view Details executed in 4.9518ms.
+Executed action Northwind.Web.Controllers.CategoryController.Details (Northwind.Web) in 52.9518ms
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Request finished in 116.1658ms 200 text/html; charset=utf-8
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 23.729ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 85.4363ms
+Request finished in 117.3527ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/Category/Details/1  
+Route matched with {action = "Details", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Details (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Details (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Details (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 28.5637ms.
+Executing ViewResult, running view Details.
+Executed ViewResult - view Details executed in 3.8844ms.
+Executed action Northwind.Web.Controllers.CategoryController.Details (Northwind.Web) in 82.6129ms
+Request finished in 147.1263ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 38.2497ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 68.7716ms
+Request finished in 86.5058ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/Category/Details/1  
+Route matched with {action = "Details", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Details (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Details (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Details (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 23.8305ms.
+Executing ViewResult, running view Details.
+Executed ViewResult - view Details executed in 7.5643ms.
+Executed action Northwind.Web.Controllers.CategoryController.Details (Northwind.Web) in 11024.7283ms
+Request finished in 11052.639ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 33.7905ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 18671.5265ms
+Request finished in 18742.2495ms 200 image/jpeg
+Application STARTED at 11/05/2018 21:51:11
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Application STARTED at 11/05/2018 22:19:42
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+An unhandled exception has occurred while executing the request.
+An exception was thrown attempting to execute the error handler.
+Connection id "0HLI3AEHTHMJ4", Request id "0HLI3AEHTHMJ4:00000001": An unhandled exception was thrown by the application.
+Request finished in 22783.3171ms 500 
+Application STARTED at 11/05/2018 22:21:16
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8885ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 258.986ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 4013.5623ms
+Request finished in 8767.9274ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 874.7429ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 1962.9526ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 3182.1609ms
+Request finished in 26658.3425ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 149.3023ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 194.9066ms
+Application STARTED at 11/05/2018 22:23:01
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7888ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 208.0504ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 251.7344ms
+Request finished in 11611.1045ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 851.3739ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 616.1328ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1658.2938ms
+Request finished in 1687.5692ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 157.1769ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 203.6004ms
+Request finished in 3502.0866ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 34.4848ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 57.3704ms
+Request finished in 3459.8589ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Application STARTED at 11/05/2018 22:25:37
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7665ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 221.4499ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 257.9584ms
+Request finished in 2072.1137ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 773.4692ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 672.5392ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1646.0799ms
+Request finished in 3035.8611ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 149.2088ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 192.2521ms
+Request finished in 26520.0126ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Application STARTED at 11/05/2018 22:27:33
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Application STARTED at 11/05/2018 22:28:30
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Application STARTED at 11/05/2018 22:30:51
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.2099ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 194.395ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 236.1392ms
+Request finished in 16914.5605ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 839.1413ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (48ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 626.6457ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1670.5737ms
+Request finished in 3519.6317ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 153.8577ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 195.1873ms
+Request finished in 30614.7759ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.ArgumentOutOfRangeException: 
+Parameter name: offset
+Actual value was 0.
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.CheckRange(Int64 offset, Nullable`1 count, Int64 fileLength)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Northwind.Web.Middleware.ImageCachingMiddleware.Invoke(HttpContext context) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Middleware\ImageCachingMiddleware.cs:line 32
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 9.7731ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 18.8949ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 43.4745ms
+Request finished in 22957.8213ms 500 text/html; charset=utf-8
+Application STARTED at 11/05/2018 22:39:14
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1061ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 232.0495ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 340.2889ms
+Request finished in 684.3385ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 808.0299ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 1435.4056ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 2460.5821ms
+Request finished in 2488.582ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 155.2739ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 196.6595ms
+Request finished in 230.4176ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.IO.FileNotFoundException: The file C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\ImageCache\-1377639170.jpeg does not exist.
+   at Microsoft.Extensions.FileProviders.NotFoundFileInfo.CreateReadStream()
+   at Northwind.Web.Middleware.ImageCachingMiddleware.Invoke(HttpContext context) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Middleware\ImageCachingMiddleware.cs:line 31
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.747ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 16.7038ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 51.2328ms
+Request finished in 11194.3103ms 500 text/html; charset=utf-8
+Application STARTED at 11/05/2018 22:42:25
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8706ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 250.4703ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 332.0807ms
+Request finished in 572.6269ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 902.5362ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 698.4696ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1798.7867ms
+Request finished in 1836.5612ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 176.1192ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 222.4799ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3AR82EMS7", Request id "0HLI3AR82EMS7:00000003": An unhandled exception was thrown by the application.
+Request finished in 435.5181ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.IO.FileNotFoundException: The file C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\ImageCache\247827835.jpeg does not exist.
+   at Microsoft.Extensions.FileProviders.NotFoundFileInfo.CreateReadStream()
+   at Northwind.Web.Middleware.ImageCachingMiddleware.Invoke(HttpContext context) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Middleware\ImageCachingMiddleware.cs:line 31
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.2279ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 17.8752ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 48.3931ms
+Request finished in 1908.9122ms 500 text/html; charset=utf-8
+Application STARTED at 11/05/2018 22:43:29
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8928ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 206.2256ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 277.7836ms
+Request finished in 529.1482ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 789.9618ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 550.0294ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1598.0679ms
+Request finished in 1638.4249ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 162.1435ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 208.6146ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3ARR8KLIL", Request id "0HLI3ARR8KLIL:00000003": An unhandled exception was thrown by the application.
+Request finished in 423.205ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.IO.FileNotFoundException: The file C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\ImageCache\1888516602.jpeg does not exist.
+   at Microsoft.Extensions.FileProviders.NotFoundFileInfo.CreateReadStream()
+   at Northwind.Web.Middleware.ImageCachingMiddleware.Invoke(HttpContext context) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Middleware\ImageCachingMiddleware.cs:line 31
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.1559ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 50.024ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 113.6788ms
+Request finished in 24267.8285ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.1309ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 29.5422ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 91.9103ms
+Request finished in 137.1652ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.ArgumentNullException: Path cannot be null.
+Parameter name: path
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at Northwind.Web.Middleware.ImageCachingMiddleware.Invoke(HttpContext context) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Middleware\ImageCachingMiddleware.cs:line 43
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.6694ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 9.0872ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 46.8109ms
+Request finished in 37783.5815ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 30.8525ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 51.8357ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3ARR8KLIN", Request id "0HLI3ARR8KLIN:00000004": An unhandled exception was thrown by the application.
+Request finished in 12140.6134ms 200 image/jpeg
+Application STARTED at 11/05/2018 22:46:20
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8498ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 232.0206ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 336.0272ms
+Request finished in 625.6334ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 781.2084ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 563.1863ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1538.0863ms
+Request finished in 1568.6459ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 165.7434ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 222.1956ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3ATE16RT4", Request id "0HLI3ATE16RT4:00000003": An unhandled exception was thrown by the application.
+Request finished in 402.8841ms 200 image/jpeg
+Application STARTED at 11/05/2018 22:47:11
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8984ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 191.1713ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 241.1104ms
+Request finished in 15859.1537ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 774.5507ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (72ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 696.1251ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1691.7692ms
+Request finished in 14117.2966ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 187.6924ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 241.2839ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3ATT9OETV", Request id "0HLI3ATT9OETV:00000003": An unhandled exception was thrown by the application.
+Request finished in 71461.8032ms 200 image/jpeg
+Application STARTED at 11/05/2018 22:51:14
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8124ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 237.5641ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 275.0314ms
+Request finished in 2594.1436ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 772.9568ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 687.2423ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1652.5963ms
+Request finished in 4098.3572ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 158.1889ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 205.6946ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3B05OU572", Request id "0HLI3B05OU572:00000003": An unhandled exception was thrown by the application.
+Request finished in 1790.2703ms 200 image/jpeg
+Application STARTED at 11/05/2018 22:53:05
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9615ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 188.5479ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 228.9871ms
+Request finished in 2073.9491ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 812.2109ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 629.6197ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1660.4995ms
+Request finished in 2949.3518ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 210.6178ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 261.1905ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3B16R7E4D", Request id "0HLI3B16R7E4D:00000003": An unhandled exception was thrown by the application.
+Request finished in 1863.5808ms 200 image/jpeg
+Application STARTED at 11/05/2018 22:54:22
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0197ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 221.0052ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 259.0152ms
+Request finished in 2222.9721ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 948.8109ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 706.3118ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1935.227ms
+Request finished in 3793.3219ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 148.2081ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 191.586ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3B1TV6OP7", Request id "0HLI3B1TV6OP7:00000003": An unhandled exception was thrown by the application.
+Request finished in 4128.384ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.IO.FileNotFoundException: The file C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\ImageCache\-276881055.jpeg does not exist.
+   at Microsoft.Extensions.FileProviders.NotFoundFileInfo.CreateReadStream()
+   at Northwind.Web.Middleware.ImageCachingMiddleware.Invoke(HttpContext context) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Middleware\ImageCachingMiddleware.cs:line 31
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10.912ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 17.7828ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 43.1321ms
+Request finished in 3298.4879ms 500 text/html; charset=utf-8
+Application STARTED at 11/05/2018 22:56:20
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0479ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 266.2488ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 333.1223ms
+Request finished in 3259.2726ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 786.2314ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 673.5988ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1701.8734ms
+Request finished in 3889.7253ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 173.5877ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 231.0125ms
+Application STARTED at 11/05/2018 23:06:49
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9041ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 218.2435ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 252.5881ms
+Request finished in 512.4944ms 200 text/html; charset=utf-8
+Application STARTED at 11/05/2018 23:07:31
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8931ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 285.8374ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 339.1267ms
+Request finished in 573.9059ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/home.svg  
+The file /home.svg was not modified
+Request finished in 46.8201ms 304 image/svg+xml
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 822.8395ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 1640.56ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 2675.5636ms
+Request finished in 2706.2868ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 153.1969ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 197.791ms
+Request finished in 262.113ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.IO.FileNotFoundException: The file C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\ImageCache\-525527680.jpeg does not exist.
+   at Microsoft.Extensions.FileProviders.NotFoundFileInfo.CreateReadStream()
+   at Northwind.Web.Middleware.ImageCachingMiddleware.Invoke(HttpContext context) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Middleware\ImageCachingMiddleware.cs:line 31
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.9631ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 13.5267ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 30.6879ms
+Request finished in 139.2728ms 500 text/html; charset=utf-8
+Application STARTED at 11/05/2018 23:08:28
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.933ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 244.6722ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 288.1315ms
+Request finished in 529.9514ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 779.2475ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 658.8534ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1633.2425ms
+Request finished in 1651.3575ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 162.8149ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 209.1756ms
+Request finished in 265.9149ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.IO.FileNotFoundException: The file C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\ImageCache\-1143744903.jpeg does not exist.
+   at Microsoft.Extensions.FileProviders.NotFoundFileInfo.CreateReadStream()
+   at Northwind.Web.Middleware.ImageCachingMiddleware.Invoke(HttpContext context) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Middleware\ImageCachingMiddleware.cs:line 31
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.3403ms.
+Executing ViewResult, running view Error.
+Executed ViewResult - view Error executed in 13.246ms.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 29.9216ms
+Request finished in 143.9739ms 500 text/html; charset=utf-8
+Application STARTED at 11/05/2018 23:11:47
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9524ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 246.7198ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 297.0968ms
+Request finished in 563.4261ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 860.7821ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 636.89ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1718.6129ms
+Request finished in 1736.365ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 227.4235ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 275.0078ms
+Request finished in 360.6345ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 51.9165ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 126.9047ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3BBL8DIKM", Request id "0HLI3BBL8DIKM:00000004": An unhandled exception was thrown by the application.
+Request finished in 741.9921ms 200 
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 65.9006ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 123.2252ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3BBL8DIKO", Request id "0HLI3BBL8DIKO:00000001": An unhandled exception was thrown by the application.
+Request finished in 2264.9135ms 200 
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 49.7257ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 120.0238ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3BBL8DIKR", Request id "0HLI3BBL8DIKR:00000001": An unhandled exception was thrown by the application.
+Request finished in 2014.1854ms 200 
+Application STARTED at 11/05/2018 23:14:14
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1745ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 382.8836ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 432.6393ms
+Request finished in 708.5097ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 829.2328ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 564.9314ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1607.7857ms
+Request finished in 1625.0928ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 148.297ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 204.9795ms
+Request finished in 259.2659ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 81.5878ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 130.8953ms
+An unhandled exception has occurred while executing the request.
+The response has already started, the error handler will not be executed.
+Connection id "0HLI3BD16JANR", Request id "0HLI3BD16JANR:00000004": An unhandled exception was thrown by the application.
+Request finished in 8628.1366ms 200 
+Application STARTED at 11/05/2018 23:15:54
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1167ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 276.072ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 315.4477ms
+Request finished in 593.1112ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 863.8901ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 649.5578ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 1726.7887ms
+Request finished in 1750.6422ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 170.9836ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 221.3543ms
+Request finished in 283.3938ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Request finished in 1937.8092ms 200 
+Application STARTED at 11/06/2018 01:28:41
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1925ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 370.3989ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 431.7066ms
+Request finished in 1494.324ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/home.svg  
+The file /home.svg was not modified
+Request finished in 41.4272ms 304 image/svg+xml
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1736.8442ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (92ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 6583.3415ms
+An unhandled exception has occurred while executing the request.
+Route matched with {action = "Error", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Error (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web) - Validation state: Valid
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Northwind.Web.Components.Breadcrumbs.InvokeAsync(Boolean addIndex) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Components\Breadcrumbs.cs:line 13
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsyncCore(ObjectMethodExecutor executor, ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+   at AspNetCore.Views_Shared__Layout.<ExecuteAsync>b__17_1() in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Views\Shared\_Layout.cshtml:line 19
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Northwind.Web.Middleware.ImageCachingMiddleware.Invoke(HttpContext context) in C:\Users\NotePad\Documents\Visual Studio 2017\Projects\Mentoring.Asp.Net.Core\Northwind.Web\Middleware\ImageCachingMiddleware.cs:line 44
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+Executed action method Northwind.Web.Controllers.HomeController.Error (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 26.3831ms.
+Executing ViewResult, running view Error.
+Executed action Northwind.Web.Controllers.HomeController.Error (Northwind.Web) in 305.5018ms
+An exception was thrown attempting to execute the error handler.
+Connection id "0HLI3DO5OLN61", Request id "0HLI3DO5OLN61:00000003": An unhandled exception was thrown by the application.
+Request finished in 7394.1106ms 500 
+Application STARTED at 11/06/2018 01:30:03
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.5381ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 313.8281ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 375.3852ms
+Request finished in 670.2469ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1378.1247ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 1069.5576ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 2726.8581ms
+Request finished in 2804.6155ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.8892ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 4216.4152ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 4248.1098ms
+Request finished in 4280.1807ms 200 text/html; charset=utf-8
+Application STARTED at 11/06/2018 01:45:47
+Maximum products per page: 10 
+ ConnectionString: Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true
+Request starting HTTP/1.1 GET https://localhost:5001/  
+Route matched with {action = "Index", controller = "Home"}. Executing action Northwind.Web.Controllers.HomeController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web) - Validation state: Valid
+Executed action method Northwind.Web.Controllers.HomeController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1661ms.
+Executing ViewResult, running view Index.
+Executed ViewResult - view Index executed in 289.3833ms.
+Executed action Northwind.Web.Controllers.HomeController.Index (Northwind.Web) in 366.0144ms
+Request finished in 626.8936ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category  
+Route matched with {action = "Index", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed action method Northwind.Web.Controllers.CategoryController.Index (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1395.5535ms.
+Executing ViewResult, running view Index.
+Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+Executed ViewResult - view Index executed in 6890.372ms.
+Executed action Northwind.Web.Controllers.CategoryController.Index (Northwind.Web) in 8629.7505ms
+Request finished in 8693.8831ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/Category/Details/1  
+Route matched with {action = "Details", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Details (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Details (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Details (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 465.3551ms.
+Executing ViewResult, running view Details.
+Executed ViewResult - view Details executed in 8889.3903ms.
+Executed action Northwind.Web.Controllers.CategoryController.Details (Northwind.Web) in 9435.5167ms
+Request finished in 9511.0998ms 200 text/html; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/images/1  
+Route matched with {action = "Image", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Image (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 40.7459ms.
+Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+Executed action Northwind.Web.Controllers.CategoryController.Image (Northwind.Web) in 76.5503ms
+Request finished in 223.0095ms 200 image/jpeg
+Request starting HTTP/1.1 GET https://localhost:5001/Category/Edit/1  
+Route matched with {action = "Edit", controller = "Category"}. Executing action Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web)
+Executing action method Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web) with arguments (1) - Validation state: Valid
+Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+Executed action method Northwind.Web.Controllers.CategoryController.Edit (Northwind.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 24.6592ms.
+Executing ViewResult, running view Edit.

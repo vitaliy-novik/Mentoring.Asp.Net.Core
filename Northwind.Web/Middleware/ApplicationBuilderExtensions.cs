@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.FileProviders;
+using Northwind.Web.Middleware;
 using System.IO;
 
 namespace Microsoft.AspNetCore.Builder
@@ -19,5 +20,23 @@ namespace Microsoft.AspNetCore.Builder
 
 			return appBuilder;
 		}
-	}
+
+
+        public static IApplicationBuilder UseImageCaching(
+            this IApplicationBuilder appBuilder,
+            string cacheDirectory,
+            int maxImages,
+            int maxTimeInSeconds)
+        {
+            var path = Path.Combine(Directory.GetCurrentDirectory(), cacheDirectory);
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            appBuilder.UseMiddleware<ImageCachingMiddleware>(path, maxImages);
+
+            return appBuilder;
+        }
+    }
 }

@@ -12,6 +12,7 @@ using Northwind.Infrastructure.Repositories;
 using Northwind.Web.ActionFilters;
 using Northwind.Web.Configuration;
 using Northwind.Web.Logging;
+using Northwind.Web.Middleware;
 using System;
 using System.IO;
 
@@ -76,8 +77,10 @@ namespace Northwind.Web
 
 			app.UseNodeModules(env.ContentRootPath);
 
-			app.UseMvc(this.ConfigureRoutes);
-		}
+            app.UseImageCaching("ImageCache", 10, 30);
+
+            app.UseMvc(this.ConfigureRoutes);
+        }
 
 		private void ConfigureRoutes(IRouteBuilder routeBuilder)
 		{

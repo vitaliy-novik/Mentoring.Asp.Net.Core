@@ -16,7 +16,7 @@
         <partial name="Navbar"/>
     }
     <div class="container">
-        @await Component.InvokeAsync("Breadcrumbs")
+        @await Component.InvokeAsync("Breadcrumbs", ViewBag.Breadcrumb)
         @RenderBody()
     </div>
     <footer class="fixed-bottom">
