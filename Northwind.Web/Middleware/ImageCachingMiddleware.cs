@@ -60,9 +60,6 @@ namespace Northwind.Web.Middleware
                 memStream.Position = 0;
                 await memStream.CopyToAsync(originalBody);
             }
-            
-
-            
         }
     }
 }

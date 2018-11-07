@@ -6,7 +6,7 @@ namespace Northwind.Web.Components
 {
     public class Breadcrumbs : ViewComponent
     {
-        public async Task<IViewComponentResult> InvokeAsync(BreadcrumbItem breadcrumb)
+        public async Task<IViewComponentResult> InvokeAsync(string name)
         {
             string actionName = ViewContext.RouteData.Values["action"]?.ToString();
             string controllerName = ViewContext.RouteData.Values["controller"]?.ToString();
@@ -16,26 +16,21 @@ namespace Northwind.Web.Components
             {
                 Display = "Home",
                 Controller = "Home",
-                Action = "Index",
-                Id = ""
+                Action = "Index"
             });
-            if (breadcrumb != null)
+            breadcrumbs.Add(new BreadcrumbItem
+            {
+                Display = controllerName,
+                Action = "Index",
+                Controller = controllerName
+            });
+            if (name != null)
             {
                 breadcrumbs.Add(new BreadcrumbItem
                 {
-                    Display = controllerName,
-                    Action = "Index",
-                    Controller = controllerName,
-                    Id = ""
+                    Display = name
                 });
             }
-            breadcrumbs.Add(new BreadcrumbItem
-            {
-                Display = actionName,
-                Action = actionName,
-                Controller = controllerName,
-                Id = id
-            });
 
             return View(breadcrumbs);
         }
