@@ -2,12 +2,16 @@
 
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        @foreach (var item in Model)
+        @foreach (var item in Model.Take(Model.Count - 1))
         {
             <li class="breadcrumb-item">
-                <a asp-action="@item.Action" asp-controller="@item.Controller" 
-                    asp-route-id="@item.Id">@item.Display</a>
+                <a asp-action="@item.Action" asp-controller="@item.Controller"
+                   asp-route-id="@item.Id">@item.Display</a>
             </li>
         }
+
+        <li class="breadcrumb-item active" aria-current="page">
+            @Model.Last().Display
+        </li>
     </ol>
 </nav>
