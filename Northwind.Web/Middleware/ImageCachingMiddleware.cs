@@ -23,23 +23,23 @@ namespace Northwind.Web.Middleware
 
         public async Task Invoke(HttpContext context)
         {
-            string url = context.Request.Path;
-            string imageGuid = url.GetHashCode().ToString();
-            var files = Directory.EnumerateFiles(cacheDirectory);
-            string fileName = files.FirstOrDefault(f => f.StartsWith(Path.Combine(cacheDirectory, imageGuid)));
-            if (!string.IsNullOrEmpty(fileName))
-            {
-                using (var stream = new FileStream(fileName, FileMode.Open))
-                {
-                    await stream.CopyToAsync(context.Response.Body);
-                    return;
-                }
-            }
-
             Stream originalBody = context.Response.Body;
             using (var memStream = new MemoryStream())
             {
-                context.Response.Body = memStream;
+				string url = context.Request.Path;
+				string imageGuid = url.GetHashCode().ToString();
+				var files = Directory.EnumerateFiles(cacheDirectory);
+				string fileName = files.FirstOrDefault(f => f.StartsWith(Path.Combine(cacheDirectory, imageGuid)));
+				if (!string.IsNullOrEmpty(fileName))
+				{
+					using (var stream = new FileStream(fileName, FileMode.Open))
+					{
+						await stream.CopyToAsync(context.Response.Body);
+						return;
+					}
+				}
+
+				context.Response.Body = memStream;
 
                 await nextDelegate.Invoke(context);
 
