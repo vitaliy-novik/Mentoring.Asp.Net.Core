@@ -77,9 +77,9 @@ namespace Northwind.Web
 
 			app.UseNodeModules(env.ContentRootPath);
 
-            app.UseImageCaching("ImageCache", 10, 30);
+			app.UseImageCaching("ImageCache", 3, 10);
 
-            app.UseMvc(this.ConfigureRoutes);
+			app.UseMvc(this.ConfigureRoutes);
         }
 
 		private void ConfigureRoutes(IRouteBuilder routeBuilder)

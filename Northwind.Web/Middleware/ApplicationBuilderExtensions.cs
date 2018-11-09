@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.FileProviders;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.FileProviders;
 using Northwind.Web.Middleware;
 using System.IO;
 
@@ -34,7 +35,9 @@ namespace Microsoft.AspNetCore.Builder
                 Directory.CreateDirectory(path);
             }
 
-            appBuilder.UseMiddleware<ImageCachingMiddleware>(path, maxImages);
+			appBuilder.UseWhen(
+				context => context.Request.Path.StartsWithSegments(new PathString("/images")), 
+				app => app.UseMiddleware<ImageCachingMiddleware>(path, maxImages));
 
             return appBuilder;
         }
