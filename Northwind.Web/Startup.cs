@@ -56,7 +56,6 @@ namespace Northwind.Web
 			ILoggerFactory loggerFactory,
 			IConfiguration configuration)
 		{
-            loggerFactory.AddConsole();
 			loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "log.txt"));
 			var logger = loggerFactory.CreateLogger("FileLogger");
 			logger.LogInformation("Application STARTED at {0}", DateTime.Now);

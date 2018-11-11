@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.FileProviders;
 using System;
 using System.IO;
 using System.Linq;
@@ -13,17 +12,19 @@ namespace Northwind.Web.Middleware
 		private RequestDelegate nextDelegate;
 		private readonly string cacheDirectory;
 		private readonly int maxImages;
+		private readonly int maxTimeInSeconds;
 		private object syncObj;
 		private DateTime lastRequestTime;
 
-		public ImageCachingMiddleware(RequestDelegate next, string cacheDirectory, int maxImages)
+		public ImageCachingMiddleware(RequestDelegate next, string cacheDirectory, int maxImages, int maxTimeInSeconds)
 		{
 			this.nextDelegate = next;
 			this.cacheDirectory = cacheDirectory;
 			this.maxImages = maxImages;
+			this.maxTimeInSeconds = maxTimeInSeconds;
+			this.lastRequestTime = DateTime.Now;
 
-			PhysicalFileProvider fileProvider = new PhysicalFileProvider(cacheDirectory);
-			//ThreadPool.QueueUserWorkItem(CleanCache);
+			ThreadPool.QueueUserWorkItem(CleanCache);
 		}
 
 		public async Task Invoke(HttpContext context)
@@ -35,7 +36,10 @@ namespace Northwind.Web.Middleware
 				string url = context.Request.Path;
 				string imageGuid = url.Split("/").Last();
 
-				await this.GetFromCache(context, imageGuid);
+				if (await this.GetFromCache(context, imageGuid))
+				{
+					return;
+				}
 
 				context.Response.Body = memStream;
 
@@ -48,7 +52,7 @@ namespace Northwind.Web.Middleware
 			}
 		}
 
-		private async Task GetFromCache(HttpContext context, string imageGuid)
+		private async Task<bool> GetFromCache(HttpContext context, string imageGuid)
 		{
 			var files = Directory.EnumerateFiles(cacheDirectory);
 			string fileName = files.FirstOrDefault(f => f.StartsWith(Path.Combine(cacheDirectory, imageGuid)));
@@ -57,9 +61,11 @@ namespace Northwind.Web.Middleware
 				using (var stream = new FileStream(fileName, FileMode.Open))
 				{
 					await stream.CopyToAsync(context.Response.Body);
-					return;
+					return true;
 				}
 			}
+
+			return false;
 		}
 
 		private async Task SaveToCache(HttpContext context, string imageGuid)
@@ -88,10 +94,11 @@ namespace Northwind.Web.Middleware
 
 		public void CleanCache(object state)
 		{
+			long timeout = this.maxTimeInSeconds * 1000;
 			DirectoryInfo directoryInfo = new DirectoryInfo(cacheDirectory);
 			while (true)
 			{
-				DateTime cacheLive = DateTime.Now.AddSeconds(-20);
+				DateTime cacheLive = DateTime.Now.AddSeconds(timeout);
 				if (lastRequestTime.CompareTo(cacheLive) < 0)
 				{
 					foreach (var file in directoryInfo.EnumerateFiles())
@@ -99,8 +106,8 @@ namespace Northwind.Web.Middleware
 						file.Delete();
 					}
 				}
-				Thread.Sleep(20000);
-				
+
+				Thread.Sleep(timeout);
 			}
 		}
     }
